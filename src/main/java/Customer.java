@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -7,6 +8,7 @@ public class Customer {
 
     public Customer(String name) {
         this.name = name;
+        rentals = new ArrayList<>();
     }
 
     public void addRental(Rental arg) {
@@ -33,7 +35,7 @@ public class Customer {
                     if(each.getD() > 3)
                         thisAmount += (each.getD() - 3) * 1.5;
                     break;
-                case Book.COMEDY:
+                case Book.THRILLER:
                     thisAmount += 2;
                     if(each.getD() > 2)
                         thisAmount += (each.getD() - 2) * 1.5;
@@ -74,7 +76,7 @@ public class Customer {
                     if(each.getD() > 3)
                         thisAmount += (each.getD() - 3) * 1.5;
                     break;
-                case Book.COMEDY:
+                case Book.THRILLER:
                     thisAmount += 2;
                     if(each.getD() > 2)
                         thisAmount += (each.getD() - 2) * 1.5;

@@ -1,7 +1,7 @@
 
 public class Book {
     public static final int CHILDRENS = 2;
-    public static final int COMEDY = 0;
+    public static final int THRILLER = 0;
     public static final int NEW_RELEASE = 1;
 
     private String _title;
